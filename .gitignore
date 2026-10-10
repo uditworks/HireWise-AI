@@ -1,0 +1,68 @@
+# ==========================================
+# HireWise AI — Root Git Ignore Configuration
+# ==========================================
+
+# Environment & Secret Files (Never commit real secrets)
+.env
+.env.*
+!.env.example
+*.local
+
+# Build Artifacts
+target/
+**/target/
+dist/
+**/dist/
+dist-ssr/
+build/
+**/build/
+
+# Dependency Directories
+node_modules/
+**/node_modules/
+
+# Local Storage & Uploaded Files (Uploaded Resumes)
+storage/
+**/storage/
+storage/resumes/
+**/storage/resumes/
+*.pdf
+
+# Logs & Temporary Files
+*.log
+logs/
+**/logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# IDE & Editor Files
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/*
+!.vscode/extensions.json
+.settings/
+.classpath
+.project
+.factorypath
+.apt_generated/
+.springBeans
+.sts4-cache/
+
+# OS Specific Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

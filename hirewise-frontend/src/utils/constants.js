@@ -1,0 +1,40 @@
+export const ROLES = {
+  JOB_SEEKER: 'JOB_SEEKER',
+  RECRUITER: 'RECRUITER'
+};
+
+export const JOB_STATUS = {
+  DRAFT: 'DRAFT',
+  PUBLISHED: 'PUBLISHED',
+  CLOSED: 'CLOSED'
+};
+
+export const APPLICATION_STATUS = {
+  SUBMITTED: 'SUBMITTED',
+  UNDER_REVIEW: 'UNDER_REVIEW',
+  SHORTLISTED: 'SHORTLISTED',
+  REJECTED: 'REJECTED',
+  ACCEPTED: 'ACCEPTED',
+  WITHDRAWN: 'WITHDRAWN'
+};
+
+export const EMPLOYMENT_TYPES = {
+  FULL_TIME: 'FULL_TIME',
+  PART_TIME: 'PART_TIME',
+  CONTRACT: 'CONTRACT',
+  INTERNSHIP: 'INTERNSHIP',
+  FREELANCE: 'FREELANCE'
+};
+
+export const EMPLOYMENT_TYPE_LABELS = {
+  FULL_TIME: 'Full Time',
+  PART_TIME: 'Part Time',
+  CONTRACT: 'Contract',
+  INTERNSHIP: 'Internship',
+  FREELANCE: 'Freelance'
+};
+
+export const STORAGE_KEYS = {
+  TOKEN: 'hirewise_token',
+  USER: 'hirewise_user'
+};

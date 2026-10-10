@@ -1,0 +1,55 @@
+# ==========================================
+# HireWise Backend Git Ignore Configuration
+# ==========================================
+
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Local File Storage (Uploaded Candidate Resumes)
+storage/
+storage/resumes/
+*.pdf
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Logs
+*.log
+logs/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### OS Files ###
+.DS_Store
+Thumbs.db
