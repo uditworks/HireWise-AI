@@ -8,9 +8,10 @@ target/
 !**/src/test/**/target/
 
 # Local File Storage (Uploaded Candidate Resumes)
-storage/
-storage/resumes/
+/storage/
 *.pdf
+!**/src/main/**
+!**/src/test/**
 
 # Environment Variables & Secrets
 .env

@@ -22,11 +22,13 @@ node_modules/
 **/node_modules/
 
 # Local Storage & Uploaded Files (Uploaded Resumes)
-storage/
-**/storage/
+/storage/
+/hirewise-backend/storage/
+hirewise-backend/storage/
 storage/resumes/
-**/storage/resumes/
 *.pdf
+!**/src/main/**
+!**/src/test/**
 
 # Logs & Temporary Files
 *.log
