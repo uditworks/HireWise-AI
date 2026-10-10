@@ -1,8 +1,11 @@
 import axios from 'axios';
 import { STORAGE_KEYS } from '../utils/constants';
 
+const rawBaseUrl = import.meta.env.VITE_API_BASE_URL || '/api';
+const apiBaseUrl = rawBaseUrl.endsWith('/') ? rawBaseUrl.slice(0, -1) : rawBaseUrl;
+
 const axiosClient = axios.create({
-  baseURL: '/api',
+  baseURL: apiBaseUrl,
   headers: {
     'Content-Type': 'application/json',
   },
