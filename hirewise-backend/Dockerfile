@@ -17,13 +17,18 @@ WORKDIR /app
 
 # Run as non-root user for security
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+
+# Pre-create storage directory and assign ownership to appuser
+RUN mkdir -p /app/storage/resumes && chown -R appuser:appgroup /app
+
 USER appuser
 
 # Copy jar from builder
-COPY --from=builder /app/target/*.jar app.jar
+COPY --from=builder --chown=appuser:appgroup /app/target/*.jar app.jar
 
 # Configure default port (overridden dynamically by Render via PORT env var)
 ENV PORT=8080
+ENV RESUME_STORAGE_DIR=/app/storage/resumes
 EXPOSE 8080
 
 ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "app.jar"]
